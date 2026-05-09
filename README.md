@@ -90,30 +90,6 @@ Set the token in environment variables:
 - Mobile responsive design
 - React Query caching
 
-### Logging Middleware
-- Reusable `Log(stack, level, package, message)` function
-- Retry with exponential backoff
-- Timeout handling
-- Input validation
-- Console + remote API output
-- Never crashes the app on failure
-
-## Logging Format
-
-```typescript
-Log(stack, level, package, message)
-```
-
-**Valid stacks:** `backend`, `frontend`
-
-**Valid levels:** `debug`, `info`, `warn`, `error`, `fatal`
-
-**Backend packages:** `cache`, `controller`, `cron_job`, `db`, `domain`, `handler`, `repository`, `route`, `service`
-
-**Frontend packages:** `api`, `component`, `hook`, `page`, `state`, `style`
-
-**Common packages:** `auth`, `config`, `middleware`, `utils`
-
 ## Environment Variables
 
 ### Backend (`.env`)
