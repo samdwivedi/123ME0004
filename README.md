@@ -5,9 +5,9 @@ A production-grade notification management system built with modern web technolo
 ## Architecture
 
 ```
-├── logging_middleware/     # Reusable logging package (TypeScript)
-├── notification_app_be/    # Backend microservice (Express + TypeScript)
-├── notification_app_fe/    # Frontend dashboard (Next.js + Material UI)
+├── logging_middleware/     
+├── notification_app_be/    
+├── notification_app_fe/    
 ├── notification_system_design.md  # System design documentation
 └── README.md
 ```
@@ -36,8 +36,8 @@ npm run build
 ```bash
 cd notification_app_be
 npm install
-cp .env.example .env   # Configure environment variables
-npm run dev             # Starts on http://localhost:5000
+cp .env.example .env   
+npm run dev             
 ```
 
 **API Endpoints:**
@@ -50,7 +50,7 @@ npm run dev             # Starts on http://localhost:5000
 ```bash
 cd notification_app_fe
 npm install
-npm run dev             # Starts on http://localhost:3000
+npm run dev             
 ```
 
 ## Authentication
@@ -89,30 +89,6 @@ Set the token in environment variables:
 - Toast notifications
 - Mobile responsive design
 - React Query caching
-
-### Logging Middleware
-- Reusable `Log(stack, level, package, message)` function
-- Retry with exponential backoff
-- Timeout handling
-- Input validation
-- Console + remote API output
-- Never crashes the app on failure
-
-## Logging Format
-
-```typescript
-Log(stack, level, package, message)
-```
-
-**Valid stacks:** `backend`, `frontend`
-
-**Valid levels:** `debug`, `info`, `warn`, `error`, `fatal`
-
-**Backend packages:** `cache`, `controller`, `cron_job`, `db`, `domain`, `handler`, `repository`, `route`, `service`
-
-**Frontend packages:** `api`, `component`, `hook`, `page`, `state`, `style`
-
-**Common packages:** `auth`, `config`, `middleware`, `utils`
 
 ## Environment Variables
 
