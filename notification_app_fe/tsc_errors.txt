@@ -1,0 +1,162 @@
+src/app/page.tsx(62,15): error TS2339: Property 'metadata' does not exist on type 'ApiResponse<any> | { data: { notifications: { id: string; title: string; message: string; notification_type: string; priority: string; timestamp: string; }[]; }; }'.
+  Property 'metadata' does not exist on type '{ data: { notifications: { id: string; title: string; message: string; notification_type: string; priority: string; timestamp: string; }[]; }; }'.
+src/app/page.tsx(62,54): error TS2339: Property 'metadata' does not exist on type 'ApiResponse<any> | { data: { notifications: { id: string; title: string; message: string; notification_type: string; priority: string; timestamp: string; }[]; }; }'.
+  Property 'metadata' does not exist on type '{ data: { notifications: { id: string; title: string; message: string; notification_type: string; priority: string; timestamp: string; }[]; }; }'.
+src/app/page.tsx(75,10): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: Element[]; display: string; alignItems: string; justifyContent: string; mb: number; flexWrap: string; gap: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: Element[]; display: string; alignItems: string; justifyContent: string; mb: number; flexWrap: string; gap: number; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'display' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/app/page.tsx(77,14): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & TypographyOwnProps & CommonProps & Omit<any, "style" | ... 9 more ... | "variantMapping">): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: string; variant: "h3"; fontWeight: number; sx: { background: string; WebkitBackgroundClip: "text"; WebkitTextFillColor: "transparent"; }; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<TypographyTypeMap<{}, "span">>): Element | null', gave the following error.
+    Type '{ children: string; variant: "h3"; fontWeight: number; sx: { background: string; WebkitBackgroundClip: "text"; WebkitTextFillColor: "transparent"; }; }' is not assignable to type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+      Property 'fontWeight' does not exist on type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+src/app/page.tsx(80,14): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & TypographyOwnProps & CommonProps & Omit<any, "style" | ... 9 more ... | "variantMapping">): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: string; variant: "body2"; color: "text.secondary"; mt: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<TypographyTypeMap<{}, "span">>): Element | null', gave the following error.
+    Type '{ children: string; variant: "body2"; color: "text.secondary"; mt: number; }' is not assignable to type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+      Property 'mt' does not exist on type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+src/app/page.tsx(84,12): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: (false | Element)[]; display: string; alignItems: string; gap: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: (false | Element)[]; display: string; alignItems: string; gap: number; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'display' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/app/page.tsx(98,10): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: Element; mb: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: Element; mb: number; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'mb' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/app/page.tsx(133,12): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: Element; display: string; justifyContent: string; mt: number; mb: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: Element; display: string; justifyContent: string; mt: number; mb: number; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'display' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/components/EmptyState.tsx(28,6): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: (Element | undefined)[]; display: string; flexDirection: string; alignItems: string; justifyContent: string; py: number; px: number; sx: { textAlign: "center"; animation: "fadeIn 0.5s ease-in-out"; '@keyframes fadeIn': { ...; }; }; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: (Element | undefined)[]; display: string; flexDirection: string; alignItems: string; justifyContent: string; py: number; px: number; sx: { textAlign: "center"; animation: "fadeIn 0.5s ease-in-out"; '@keyframes fadeIn': { ...; }; }; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'display' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/components/EmptyState.tsx(65,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & TypographyOwnProps & CommonProps & Omit<any, "style" | ... 9 more ... | "variantMapping">): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: string; variant: "h5"; fontWeight: number; color: "text.primary"; mb: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<TypographyTypeMap<{}, "span">>): Element | null', gave the following error.
+    Type '{ children: string; variant: "h5"; fontWeight: number; color: "text.primary"; mb: number; }' is not assignable to type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+      Property 'fontWeight' does not exist on type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+src/components/EmptyState.tsx(74,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & TypographyOwnProps & CommonProps & Omit<any, "style" | ... 9 more ... | "variantMapping">): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: string; variant: "body1"; color: "text.secondary"; maxWidth: number; mb: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<TypographyTypeMap<{}, "span">>): Element | null', gave the following error.
+    Type '{ children: string; variant: "body1"; color: "text.secondary"; maxWidth: number; mb: number; }' is not assignable to type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+      Property 'maxWidth' does not exist on type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+src/components/ErrorBoundary.tsx(36,10): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: Element[]; display: string; flexDirection: string; alignItems: string; justifyContent: string; py: number; px: number; sx: { textAlign: "center"; }; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: Element[]; display: string; flexDirection: string; alignItems: string; justifyContent: string; py: number; px: number; sx: { textAlign: "center"; }; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'display' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/components/ErrorBoundary.tsx(40,12): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & TypographyOwnProps & CommonProps & Omit<any, "style" | ... 9 more ... | "variantMapping">): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: string; variant: "h5"; fontWeight: number; mb: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<TypographyTypeMap<{}, "span">>): Element | null', gave the following error.
+    Type '{ children: string; variant: "h5"; fontWeight: number; mb: number; }' is not assignable to type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+      Property 'fontWeight' does not exist on type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+src/components/ErrorBoundary.tsx(41,12): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & TypographyOwnProps & CommonProps & Omit<any, "style" | ... 9 more ... | "variantMapping">): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: string; variant: "body2"; color: "text.secondary"; mb: number; maxWidth: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<TypographyTypeMap<{}, "span">>): Element | null', gave the following error.
+    Type '{ children: string; variant: "body2"; color: "text.secondary"; mb: number; maxWidth: number; }' is not assignable to type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+      Property 'mb' does not exist on type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+src/components/ErrorDisplay.tsx(31,6): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: (Element | undefined)[]; display: string; flexDirection: string; alignItems: string; justifyContent: string; py: number; px: number; sx: { textAlign: "center"; animation: "shake 0.5s ease-in-out"; '@keyframes shake': { ...; }; }; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: (Element | undefined)[]; display: string; flexDirection: string; alignItems: string; justifyContent: string; py: number; px: number; sx: { textAlign: "center"; animation: "shake 0.5s ease-in-out"; '@keyframes shake': { ...; }; }; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'display' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/components/ErrorDisplay.tsx(63,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & TypographyOwnProps & CommonProps & Omit<any, "style" | ... 9 more ... | "variantMapping">): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: string; variant: "h5"; fontWeight: number; color: "text.primary"; mb: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<TypographyTypeMap<{}, "span">>): Element | null', gave the following error.
+    Type '{ children: string; variant: "h5"; fontWeight: number; color: "text.primary"; mb: number; }' is not assignable to type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+      Property 'fontWeight' does not exist on type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+src/components/ErrorDisplay.tsx(67,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & TypographyOwnProps & CommonProps & Omit<any, "style" | ... 9 more ... | "variantMapping">): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: string; variant: "body1"; color: "text.secondary"; maxWidth: number; mb: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<TypographyTypeMap<{}, "span">>): Element | null', gave the following error.
+    Type '{ children: string; variant: "body1"; color: "text.secondary"; maxWidth: number; mb: number; }' is not assignable to type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+      Property 'maxWidth' does not exist on type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+src/components/Navbar.tsx(30,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: Element[]; px: number; pb: number; display: string; alignItems: string; gap: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: Element[]; px: number; pb: number; display: string; alignItems: string; gap: number; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'px' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/components/Navbar.tsx(34,10): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & TypographyOwnProps & CommonProps & Omit<any, "style" | ... 9 more ... | "variantMapping">): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: string; variant: "h6"; fontWeight: number; sx: { background: string; WebkitBackgroundClip: "text"; WebkitTextFillColor: "transparent"; }; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<TypographyTypeMap<{}, "span">>): Element | null', gave the following error.
+    Type '{ children: string; variant: "h6"; fontWeight: number; sx: { background: string; WebkitBackgroundClip: "text"; WebkitTextFillColor: "transparent"; }; }' is not assignable to type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+      Property 'fontWeight' does not exist on type 'IntrinsicAttributes & TypographyOwnProps & CommonProps & Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "style" | ... 9 more ... | "variantMapping">'.
+src/components/Navbar.tsx(53,52): error TS2322: Type '{ primary: string; primaryTypographyProps: { fontWeight: number; fontSize: string; }; }' is not assignable to type 'IntrinsicAttributes & ListItemTextProps<"span", "p">'.
+  Property 'primaryTypographyProps' does not exist on type 'IntrinsicAttributes & ListItemTextProps<"span", "p">'.
+src/components/NotificationCard.tsx(93,10): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: Element[]; display: string; alignItems: string; justifyContent: string; gap: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: Element[]; display: string; alignItems: string; justifyContent: string; gap: number; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'display' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/components/NotificationCard.tsx(94,12): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: Element[]; flex: number; minWidth: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: Element[]; flex: number; minWidth: number; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'flex' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/components/NotificationCard.tsx(96,14): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: ("" | Element | undefined)[]; display: string; alignItems: string; gap: number; mb: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: ("" | Element | undefined)[]; display: string; alignItems: string; gap: number; mb: number; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'display' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/components/NotificationFilter.tsx(48,6): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: Element[]; display: string; alignItems: string; gap: number; flexWrap: string; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: Element[]; display: string; alignItems: string; gap: number; flexWrap: string; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'display' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/components/NotificationFilter.tsx(50,8): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: Element[]; display: string; gap: number; flexWrap: string; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: Element[]; display: string; gap: number; flexWrap: string; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'display' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/components/NotificationFilter.tsx(107,16): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: ReactNode[]; display: string; alignItems: string; gap: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: ReactNode[]; display: string; alignItems: string; gap: number; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'display' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/components/NotificationSkeleton.tsx(33,14): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: Element[]; display: string; alignItems: string; justifyContent: string; gap: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: Element[]; display: string; alignItems: string; justifyContent: string; gap: number; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'display' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/components/NotificationSkeleton.tsx(34,16): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: Element[]; flex: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: Element[]; flex: number; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'flex' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+src/components/NotificationSkeleton.tsx(35,18): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & BoxOwnProps<Theme> & Omit<any, keyof BoxOwnProps<Theme>>): Element | null', gave the following error.
+    Property 'component' is missing in type '{ children: Element[]; display: string; alignItems: string; gap: number; mb: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+  Overload 2 of 2, '(props: DefaultComponentProps<BoxTypeMap<{}, "div", Theme>>): Element | null', gave the following error.
+    Type '{ children: Element[]; display: string; alignItems: string; gap: number; mb: number; }' is not assignable to type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.
+      Property 'display' does not exist on type 'IntrinsicAttributes & BoxOwnProps<Theme> & Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof BoxOwnProps<...>>'.

@@ -30,9 +30,9 @@ export function NotificationSkeleton({ count = 5 }: NotificationSkeletonProps) {
           }}
         >
           <CardContent sx={{ p: 2.5, '&:last-child': { pb: 2.5 } }}>
-            <Box display="flex" alignItems="flex-start" justifyContent="space-between" gap={1}>
-              <Box flex={1}>
-                <Box display="flex" alignItems="center" gap={1} mb={1}>
+            <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 1 }}>
+              <Box sx={{ flex: 1 }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
                   <Skeleton variant="rounded" width={80} height={24} />
                   <Skeleton variant="rounded" width={50} height={24} />
                 </Box>

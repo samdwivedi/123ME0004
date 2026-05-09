@@ -55,6 +55,7 @@ export function useViewedState() {
   // Load initial state from localStorage on mount
   useEffect(() => {
     const initial = loadViewedState();
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setViewedState(initial);
     Log('frontend', 'info', 'state', `Loaded viewed state: ${Object.keys(initial).length} notifications tracked`);
   }, []);

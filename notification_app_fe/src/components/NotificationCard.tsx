@@ -90,10 +90,10 @@ export function NotificationCard({ notification, isViewed, onToggleViewed }: Not
       )}
 
       <CardContent sx={{ p: 2.5, '&:last-child': { pb: 2.5 } }}>
-        <Box display="flex" alignItems="flex-start" justifyContent="space-between" gap={1}>
-          <Box flex={1} minWidth={0}>
+        <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 1 }}>
+          <Box sx={{ flex: 1, minWidth: 0 }}>
             {/* Notification type chip */}
-            <Box display="flex" alignItems="center" gap={1} mb={1}>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
               <Chip
                 icon={config.icon as React.ReactElement}
                 label={config.label}

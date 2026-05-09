@@ -7,7 +7,6 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import PriorityHighIcon from '@mui/icons-material/PriorityHigh';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -16,7 +15,6 @@ const DRAWER_WIDTH = 260;
 
 const navItems = [
   { label: 'Dashboard', path: '/', icon: <DashboardIcon /> },
-  { label: 'Priority', path: '/priority', icon: <PriorityHighIcon /> },
 ];
 
 interface NavbarProps { unviewedCount?: number; }
@@ -29,11 +27,11 @@ export function Navbar({ unviewedCount = 0 }: NavbarProps) {
 
   const drawerContent = (
     <Box sx={{ pt: 2 }}>
-      <Box px={3} pb={3} display="flex" alignItems="center" gap={1.5}>
+      <Box sx={{ px: 3, pb: 3, display: "flex", alignItems: "center", gap: 1.5 }}>
         <Box sx={{ width: 36, height: 36, borderRadius: 2, background: 'linear-gradient(135deg, #6C63FF 0%, #00D9FF 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <NotificationsIcon sx={{ color: '#fff', fontSize: 20 }} />
         </Box>
-        <Typography variant="h6" fontWeight={800} sx={{ background: 'linear-gradient(135deg, #6C63FF, #00D9FF)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+        <Typography variant="h6" sx={{ fontWeight: 800, background: 'linear-gradient(135deg, #6C63FF, #00D9FF)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
           NotifyHub
         </Typography>
       </Box>
@@ -52,7 +50,7 @@ export function Navbar({ unviewedCount = 0 }: NavbarProps) {
                 <ListItemIcon sx={{ color: isActive ? '#6C63FF' : 'text.secondary', minWidth: 40 }}>
                   {item.icon}
                 </ListItemIcon>
-                <ListItemText primary={item.label} primaryTypographyProps={{ fontWeight: isActive ? 700 : 500, fontSize: '0.9rem' }} />
+                <ListItemText primary={<Typography sx={{ fontWeight: isActive ? 700 : 500, fontSize: '0.9rem' }}>{item.label}</Typography>} />
               </ListItemButton>
             </ListItem>
           );

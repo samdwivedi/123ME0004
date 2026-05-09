@@ -15,6 +15,7 @@ import { ApiResponse, Notification, NotificationParams, HealthResponse } from '.
  * @param params - Query parameters for filtering and pagination
  * @returns Promise resolving to the API response
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function getNotifications(params: NotificationParams = {}): Promise<ApiResponse<any>> {
   try {
     Log('frontend', 'info', 'api', `Fetching notifications: ${JSON.stringify(params)}`);

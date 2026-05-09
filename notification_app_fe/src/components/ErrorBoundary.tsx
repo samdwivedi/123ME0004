@@ -33,12 +33,12 @@ export class ErrorBoundary extends Component<Props, State> {
   render(): ReactNode {
     if (this.state.hasError) {
       return this.props.fallback || (
-        <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" py={8} px={3} sx={{ textAlign: 'center' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', py: 8, px: 3, textAlign: 'center' }}>
           <Box sx={{ width: 100, height: 100, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: alpha('#FF4C6A', 0.1), mb: 3 }}>
             <BugReportIcon sx={{ fontSize: 48, color: '#FF4C6A' }} />
           </Box>
-          <Typography variant="h5" fontWeight={700} mb={1}>Something went wrong</Typography>
-          <Typography variant="body2" color="text.secondary" mb={3} maxWidth={400}>
+          <Typography variant="h5" sx={{ fontWeight: 700, mb: 1 }}>Something went wrong</Typography>
+          <Typography variant="body2" sx={{ color: 'text.secondary', mb: 3, maxWidth: 400 }}>
             {this.state.error?.message || 'An unexpected error occurred.'}
           </Typography>
           <Button variant="contained" startIcon={<RefreshIcon />} onClick={this.handleReset}

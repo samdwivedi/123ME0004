@@ -26,13 +26,13 @@ export function EmptyState({
 }: EmptyStateProps) {
   return (
     <Box
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
-      py={8}
-      px={3}
       sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        py: 8,
+        px: 3,
         textAlign: 'center',
         animation: 'fadeIn 0.5s ease-in-out',
         '@keyframes fadeIn': {
@@ -64,18 +64,14 @@ export function EmptyState({
 
       <Typography
         variant="h5"
-        fontWeight={700}
-        color="text.primary"
-        mb={1}
+        sx={{ fontWeight: 700, color: 'text.primary', mb: 1 }}
       >
         {title}
       </Typography>
 
       <Typography
         variant="body1"
-        color="text.secondary"
-        maxWidth={400}
-        mb={3}
+        sx={{ color: 'text.secondary', maxWidth: 400, mb: 3 }}
       >
         {description}
       </Typography>

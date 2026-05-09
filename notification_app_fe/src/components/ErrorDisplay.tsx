@@ -29,13 +29,13 @@ export function ErrorDisplay({
 
   return (
     <Box
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
-      py={8}
-      px={3}
       sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        py: 8,
+        px: 3,
         textAlign: 'center',
         animation: 'shake 0.5s ease-in-out',
         '@keyframes shake': {
@@ -60,11 +60,11 @@ export function ErrorDisplay({
         <ErrorOutlinedIcon sx={{ fontSize: 56, color: '#FF4C6A' }} />
       </Box>
 
-      <Typography variant="h5" fontWeight={700} color="text.primary" mb={1}>
+      <Typography variant="h5" sx={{ fontWeight: 700, color: 'text.primary', mb: 1 }}>
         Oops! Something went wrong
       </Typography>
 
-      <Typography variant="body1" color="text.secondary" maxWidth={400} mb={3}>
+      <Typography variant="body1" sx={{ color: 'text.secondary', maxWidth: 400, mb: 3 }}>
         {message}
       </Typography>
 

@@ -45,9 +45,9 @@ export function NotificationFilter({ selectedType, onTypeChange }: NotificationF
   }, [onTypeChange]);
 
   return (
-    <Box display="flex" alignItems="center" gap={2} flexWrap="wrap">
+    <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, flexWrap: 'wrap' }}>
       {/* Quick filter chips */}
-      <Box display="flex" gap={1} flexWrap="wrap">
+      <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
         {filterOptions.map((option) => (
           <Chip
             key={option.value || 'all'}
@@ -104,7 +104,7 @@ export function NotificationFilter({ selectedType, onTypeChange }: NotificationF
         >
           {filterOptions.map((option) => (
             <MenuItem key={option.value || 'all'} value={option.value}>
-              <Box display="flex" alignItems="center" gap={1}>
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 {option.icon}
                 {option.label}
               </Box>

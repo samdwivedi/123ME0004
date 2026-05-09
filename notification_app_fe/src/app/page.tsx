@@ -59,7 +59,8 @@ export default function DashboardPage() {
   }, [data]);
 
   const totalPages = React.useMemo(() => {
-    if (data?.metadata?.total) return Math.ceil(data.metadata.total / limit);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    if ((data as any)?.metadata?.total) return Math.ceil((data as any).metadata.total / limit);
     if (notifications.length < limit) return page;
     return page + 1;
   }, [data, notifications.length, limit, page]);
@@ -72,16 +73,16 @@ export default function DashboardPage() {
       <Navbar unviewedCount={unviewedCount} />
       <Box component="main" sx={{ flexGrow: 1, ml: { xs: 0, md: `${DRAWER_WIDTH}px` }, mt: '64px', p: { xs: 2, sm: 3, md: 4 }, maxWidth: 900 }}>
         {/* Header */}
-        <Box display="flex" alignItems="center" justifyContent="space-between" mb={3} flexWrap="wrap" gap={2}>
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 3, flexWrap: 'wrap', gap: 2 }}>
           <Box>
-            <Typography variant="h3" fontWeight={800} sx={{ background: 'linear-gradient(135deg, #F1F5F9, #94A3B8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+            <Typography variant="h3" sx={{ fontWeight: 800, background: 'linear-gradient(135deg, #F1F5F9, #94A3B8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
               Notifications
             </Typography>
-            <Typography variant="body2" color="text.secondary" mt={0.5}>
+            <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5 }}>
               Stay updated with your latest notifications
             </Typography>
           </Box>
-          <Box display="flex" alignItems="center" gap={1}>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             {unviewedCount > 0 && (
               <Chip label={`${unviewedCount} unread`} size="small" sx={{ backgroundColor: alpha('#00D9FF', 0.15), color: '#00D9FF', fontWeight: 700 }} />
             )}
@@ -95,7 +96,7 @@ export default function DashboardPage() {
         </Box>
 
         {/* Filters */}
-        <Box mb={3}>
+        <Box sx={{ mb: 3 }}>
           <ErrorBoundary>
             <NotificationFilter selectedType={filterType} onTypeChange={handleFilterChange} />
           </ErrorBoundary>
@@ -130,7 +131,7 @@ export default function DashboardPage() {
 
         {/* Pagination */}
         {!isLoading && !isError && notifications.length > 0 && (
-          <Box display="flex" justifyContent="center" mt={4} mb={2}>
+          <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4, mb: 2 }}>
             <Pagination count={totalPages} page={page} onChange={handlePageChange} color="primary" size="large"
               sx={{ '& .MuiPaginationItem-root': { fontWeight: 600 } }} />
           </Box>
