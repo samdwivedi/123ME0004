@@ -15,22 +15,6 @@
 
 ---
 
-## Stage Deliverables Output
-
-### Stage 1: Notification API (Backend & Logging)
-- **Reusable Logging Middleware**: Developed a robust, fire-and-forget logging package in TypeScript. The package implements the `Log(stack, level, package, message)` signature, incorporates exponential backoff retries, robust validation based on specific Stack, Level, and Package constraints, and graceful failure handling.
-- **Backend Application**: Built an Express.js microservice (`notification_app_be`) running on port 5000. It implements a protected GET `/api/v1/notifications` endpoint that fetches data from the external notification service. 
-- **Query Parameters**: Fully supports and validates `limit`, `page`, and `notification_type` parameters.
-- **Integration**: The backend seamlessly integrates the custom logging middleware to provide contextual logging across routes, controllers, and services without blocking API execution.
-
-### Stage 2: Frontend Implementation
-- **Frontend Application**: Developed a Next.js application (`notification_app_fe`) running on port 3000. It adheres strictly to the constraint of using only Material UI (no Tailwind or other frameworks) for styling.
-- **Aesthetic UI**: Implemented a premium dark theme with glassmorphism effects, a responsive layout with a persistent sidebar, and a clean filter bar.
-- **Functionality**: Integrates with the Stage 1 Backend to fetch and display notifications. Features include type-based filtering, unread/read state toggling persisted in `localStorage`, and error boundaries with retry mechanisms.
-- **Logging Integration**: The frontend also utilizes the shared logging middleware to log user interactions, API fetches, and UI errors, mapping them correctly to frontend-specific packages (e.g., `component`, `page`).
-
----
-
 ## Architecture Overview
 
 The notification system follows a **three-tier architecture** with clear separation of concerns:
